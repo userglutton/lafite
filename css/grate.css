@@ -1,0 +1,585 @@
+body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+}
+/*-------header--------*/
+#header{
+	width: 100%;
+	height: 60px;
+	background: #1F1F1F;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	margin:0;
+	padding: 0;
+}
+#header .logo{
+	width: 8%;
+	height: 115px;
+	padding-top: 10px;
+	margin-left: 13%;
+	box-sizing: border-box;
+	background: #fff;
+	text-align: center;
+	border-radius: 50%;
+}
+#header .logo img{
+	width: 85%;
+	height: 100px;
+}
+#header #rMenu{
+	width: 35px;
+	height: 25px;
+	border: 1px solid #000;
+	background: #fff;
+	border-radius: 3px;
+	display: none;
+}
+#header #rMenu{
+	width: 35px;
+	height: 25px;
+	border: 1px solid #000;
+	background: #fff;
+	border-radius: 3px;
+	display: none;
+}
+#header .rMenu{
+	font-size: 10px;
+	color: #000;
+	margin-right: 11px;
+	margin-bottom: 10px;
+}
+#header #nav{
+	width: 50%;
+	height: 60px;
+	margin-top: -115px;
+	margin-left: 33%;
+	display: block;
+}
+#header #nav li{
+	float: left;
+}
+.list{
+	width:20%; 
+	height:35px; 
+	padding-top: 25px; 
+	position:relative; 
+	z-index:100;
+	-webkit-perspective:400px;
+	-moz-perspective:400px;
+	perspective:400px;
+	-webkit-perspective-origin: 50% 100%;
+	-moz-perspective-origin: 50% 100%;
+	perspective-origin: 50% 100%;
+}
+/* list下所有div的统一设置 */
+.list div{
+	position:absolute; 
+	padding:10px;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	top:100%; 
+	left:0; 
+	width:116px;
+	text-align: center;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+	cursor: pointer;
+}
+.list .odd{
+	background:#fff;
+	-moz-transform:rotateX(-180deg);
+	-webkit-transform:rotateX(-180deg);
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+.list .even{
+	background:#000;
+	-moz-transform:rotateX(180deg);
+	-webkit-transform:rotateX(180deg);
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+.list .first{
+	background:#fff;
+	-moz-transform:rotateX(-100deg);
+	-webkit-transform:rotateX(-100deg);
+	-webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+}
+.list .last{
+	box-shadow:0 15px 10px -10px rgba(0,0,0,0.3); 
+	border-radius: 0 0 10px 10px;
+}
+.list:hover .sub{
+	-moz-transform:rotateX(0deg);
+	-webkit-transform:rotateX(0deg);
+}
+.list .sub p{
+	font: normal 12px/15px arial, sans-serif; 
+	color:#000; 
+	padding:0; 
+	margin:0;
+}
+.list .sub p a{
+	font: normal 12px/15px arial, sans-serif; 
+	color: #BF9B63;
+}
+.list .sub p a:hover{
+	text-decoration:none;
+}
+.list a.main{
+	display:block; 
+	font: bold 15px/35px arial, sans-serif; 
+	text-align:center; 
+	text-decoration:none; 
+	color: #BF9B63;
+	background:#000; 
+	border-radius:10px 10px 0 0; 
+	position:relative; 
+	z-index:100;
+}
+/*-------banner-------*/
+#banner{
+	width: 100%;
+	height: auto;
+}
+#banner .fixed-bg{
+	height: 6300px;
+	background: url(../images/gratebg.jpg) no-repeat fixed;
+    background-size: 100% 100%; 
+}
+#banner p{
+	color: #BF9B63;
+	position: absolute;
+	top: 90px;
+	left: 23%;
+}
+#banner p a{
+	color: #fff;
+}
+#banner p a:hover{
+	color: #BF9B63;
+}
+#banner .banner-title{
+	width: 70%;
+	height: 100px;
+	line-height: 80px;
+	border-bottom: 1px solid #BF9B63;
+	font-size: 40px;
+	color: #BF9B63;
+	position: relative;
+	top: -6200px;
+	margin: 0px auto;
+	text-align: center;
+}
+#banner select{
+	width: 80px;
+	height: 30px;
+	font-size: 15px;
+	color: #fff;
+	background: rgba(0,0,0,.9);
+	position: absolute;
+	top: 250px;
+	margin-left: 47%;
+	border: none;
+	text-align: center;
+}
+#banner .pic{
+    position: absolute;
+    top: 300px;
+    left: 49%;
+}
+#banner .split{
+	width: 1px;
+	height: 5900px;
+	background: #BB9C62;
+	position: absolute;
+	top: 340px;
+	left: 50%;
+}
+#banner .con1868{
+	width: 33%;
+	height: 720px;
+	position: absolute;
+	top: 400px;
+	left: 17.4%;
+}
+#banner .con1868 .left{
+	width: 96%;
+	height: 720px;
+	background: #fff;
+	margin-left: -.5%;
+}
+#banner .con1868 .right img{
+	transform: rotate(180deg);
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+#banner .con1870{
+	width: 33%;
+	height: 520px;
+	position: absolute;
+	top: 480px;
+	left: 51%;
+}
+#banner .con1870 .right{
+	width: 96%;
+	height: 520px;
+	background: #fff;
+	margin-left: 1%;
+}
+#banner .con1870 .left img{
+	position: absolute;
+	top: 50px;
+	left: -3.7%;
+}
+#banner .con1900{
+	width: 33%;
+	height: 540px;
+	position: absolute;
+	top: 1200px;
+	left: 17.4%;
+}
+#banner .con1900 .left{
+	width: 96%;
+	height: 540px;
+	background: #fff;
+	margin-left: -.5%;
+}
+#banner .con1900 .right img{
+	transform: rotate(180deg);
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+#banner .con1946{
+	width: 33%;
+	height: 800px;
+	position: absolute;
+	top: 1300px;
+	left: 51%;
+}
+#banner .con1946 .right{
+	width: 96%;
+	height: 800px;
+	background: #fff;
+	margin-left: 1%;
+}
+#banner .con1946 .left img{
+	position: absolute;
+	top: 50px;
+	left: -3.7%;
+}
+#banner .con1962{
+	width: 33%;
+	height: 600px;
+	position: absolute;
+	top: 2100px;
+	left: 17.4%;
+}
+#banner .con1962 .left{
+	width: 96%;
+	height: 600px;
+	background: #fff;
+	margin-left: -.5%;
+}
+#banner .con1962 .right img{
+	transform: rotate(180deg);
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+#banner .con1974{
+	width: 33%;
+	height: 700px;
+	position: absolute;
+	top: 2200px;
+	left: 51%;
+}
+#banner .con1974 .right{
+	width: 96%;
+	height: 700px;
+	background: #fff;
+	margin-left: 1%;
+}
+#banner .con1974 .left img{
+	position: absolute;
+	top: 50px;
+	left: -3.7%;
+}
+#banner .con1975{
+	width: 33%;
+	height: 560px;
+	position: absolute;
+	top: 2900px;
+	left: 17.4%;
+}
+#banner .con1975 .left{
+	width: 96%;
+	height: 560px;
+	background: #fff;
+	margin-left: -.5%;
+}
+#banner .con1975 .right img{
+	transform: rotate(180deg);
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+#banner .con1984{
+	width: 33%;
+	height: 540px;
+	position: absolute;
+	top: 3000px;
+	left: 51%;
+}
+#banner .con1984 .right{
+	width: 96%;
+	height: 540px;
+	background: #fff;
+	margin-left: 1%;
+}
+#banner .con1984 .left img{
+	position: absolute;
+	top: 50px;
+	left: -3.7%;
+}
+#banner .con19881{
+	width: 33%;
+	height: 540px;
+	position: absolute;
+	top: 3550px;
+	left: 17.4%;
+}
+#banner .con19881 .left{
+	width: 96%;
+	height: 540px;
+	background: #fff;
+	margin-left: -.5%;
+}
+#banner .con19881 .right img{
+	transform: rotate(180deg);
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+#banner .con1988{
+	width: 33%;
+	height: 550px;
+	position: absolute;
+	top: 3600px;
+	left: 51%;
+}
+#banner .con1988 .right{
+	width: 96%;
+	height: 550px;
+	background: #fff;
+	margin-left: 1%;
+}
+#banner .con1988 .left img{
+	position: absolute;
+	top: 50px;
+	left: -3.7%;
+}
+#banner .con1990{
+	width: 33%;
+	height: 480px;
+	position: absolute;
+	top: 4200px;
+	left: 17.4%;
+}
+#banner .con1990 .left{
+	width: 96%;
+	height: 480px;
+	background: #fff;
+	margin-left: -.5%;
+}
+#banner .con1990 .right img{
+	transform: rotate(180deg);
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+#banner .con1995{
+	width: 33%;
+	height: 550px;
+	position: absolute;
+	top: 4300px;
+	left: 51%;
+}
+#banner .con1995 .right{
+	width: 96%;
+	height: 550px;
+	background: #fff;
+	margin-left: 1%;
+}
+#banner .con1995 .left img{
+	position: absolute;
+	top: 50px;
+	left: -3.7%;
+}
+#banner .con1999{
+	width: 33%;
+	height: 690px;
+	position: absolute;
+	top: 4800px;
+	left: 17.4%;
+}
+#banner .con1999 .left{
+	width: 96%;
+	height: 690px;
+	background: #fff;
+	margin-left: -.5%;
+}
+#banner .con1999 .right img{
+	transform: rotate(180deg);
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+#banner .con2001{
+	width: 33%;
+	height: 480px;
+	position: absolute;
+	top: 4900px;
+	left: 51%;
+}
+#banner .con2001 .right{
+	width: 96%;
+	height: 480px;
+	background: #fff;
+	margin-left: 1%;
+}
+#banner .con2001 .left img{
+	position: absolute;
+	top: 50px;
+	left: -3.7%;
+}
+#banner .con2004{
+	width: 33%;
+	height: 520px;
+	position: absolute;
+	top: 5600px;
+	left: 17.4%;
+}
+#banner .con2004 .left{
+	width: 96%;
+	height: 520px;
+	background: #fff;
+	margin-left: -.5%;
+}
+#banner .con2004 .right img{
+	transform: rotate(180deg);
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+#banner .con2008{
+	width: 33%;
+	height: 480px;
+	position: absolute;
+	top: 5700px;
+	left: 51%;
+}
+#banner .con2008 .right{
+	width: 96%;
+	height: 480px;
+	background: #fff;
+	margin-left: 1%;
+}
+#banner .con2008 .left img{
+	position: absolute;
+	top: 50px;
+	left: -3.7%;
+}
+/*---banner下的h1/h4/h6设置---*/
+#banner h1{
+	width: 90%;
+	font-size: 35px;
+	font-weight: 100;
+	line-height: 70px;
+	color: #BB9C62;
+	margin: 0 auto;
+	text-align: center;
+}
+#banner h4{
+	width: 90%;
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 100;
+	color: #000;
+	margin: 0 auto;
+}
+#banner .img{
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 5%;
+}
+#banner h6{
+	width: 90%;
+	font-size: 10px;
+	color: #000;
+	font-weight: 100;
+	margin: 10px auto;
+}
+/*-------footer--------*/
+#footer{
+	width: 100%;
+	height: 100px;
+}
+#footer ul li a{
+	color: #000;
+	text-align: center;
+}
+#footer ul li a:hover{
+	color: #B89D63;
+}
+#footer ul li.banquan{
+	font-size: 15px;
+	color: #000;
+	text-align: center;
+	margin-top: -50px;
+}
+#footer ul li.ziti{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 10px;
+}
+#footer ul li.ziti a{
+	color: #000;
+}
+#footer ul li.tishi{
+	font-size: 10px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#gTop{
+	width: 40px;
+	height: 40px;
+	background: #B89D63;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	display: none;
+	font-size: 20px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
